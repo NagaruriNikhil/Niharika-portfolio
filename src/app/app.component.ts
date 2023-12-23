@@ -1,14 +1,22 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-
+import {NavigationEnd, Router} from '@angular/router';
+import {filter} from 'rxjs/operators';
+ 
+declare var gtag:any;
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'niharika-portfolio';
+  title = 'portfolio-web';
+  constructor(private router:Router)
+  {
+   const navEndEvents$= this.router.events.pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd));
+   navEndEvents$.subscribe((event:NavigationEnd)=>{
+      gtag('config', 'G-J9GCQW77JM',{
+        'page_path':event.urlAfterRedirects
+      })
+    });
+  }
 }

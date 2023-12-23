@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0" />
+    <title>N square Event Management</title>
+    <link rel="stylesheet" href="portfolio.component.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+  </head>
+  <body>
+    <!-- <form [formGroup]="" (ngSubmit)="onSubmit()"> -->
+
+    <section class="course">
+      <br />
+      <div class="row">
+        <div class="course-col">
+          <a [routerLink]="['/product']"
+            ><img
+              src="../../assets/images/UAB.jpeg"
+              height="350px"
+              width="200px"
+              alt="UAB"
+          /></a>
+        </div>
+        <div class="course-col">
+          <a [routerLink]="['/udaan']"
+            ><img
+              src="../../assets/images/TCS.jpg"
+              height="350px"
+              width="200px"
+              alt="TCS"
+          /></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="course-col">
+          <a [routerLink]="['/intern']"
+            ><img
+              src="../../assets/images/drdo_logo.jpg"
+              height="350px"
+              width="200px"
+              alt="Summer Intern"
+          /></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

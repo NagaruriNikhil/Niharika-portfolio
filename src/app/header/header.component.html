@@ -1,0 +1,38 @@
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+</head>
+<section class="header">
+  <nav>
+    <div class="abc">
+      <a [routerLink]="['/about']" style="color: rgb(0, 11, 11)"
+        ><h1>Niharika Parimi</h1></a
+      >
+    </div>
+    <div class="nav-links" id="navLinks">
+      <!-- <i class="fa fa-close" onclick="hideMenu()"></i> -->
+      <ul>
+        <li>
+          <a [routerLink]="['/']" style="color: black">ABOUT + CONNECT</a>
+        </li>
+        <li>
+          <a [routerLink]="['/portfolio']" style="color: black">MY WORK</a>
+        </li>
+        <li><a [routerLink]="['/resume']" style="color: black">RESUME</a></li>
+      </ul>
+    </div>
+    <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
+  </nav>
+
+  <div class="name">
+    <!-- <h1>-Tejaswi is a Associate Product Manager (Category Manager) - Hardware</h1> -->
+  </div>
+</section>
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+</script>

@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", cursive;
+}
+.header {
+  min-height: 20vh;
+  width: 100%;
+  /* background-image:url(https://www.tourmyindia.com/blog//wp-content/uploads/2018/09/Festivals-to-Witness-in-December.jpg); */
+  background-color:  rgb(196, 220, 242);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  animation-name: example;
+  animation-duration: 0s;
+  background-image: repeat;
+  object-fit: contain;
+  animation-iteration-count: 1;
+}
+
+.abc a {
+  text-decoration: none;
+  font-family: "Sofia", sans-serif;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 75px;
+  height: 60px;
+}
+.name {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(217, 171, 171);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-button {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  color: rgb(49, 45, 45);
+  background: #fff3f3;
+  position: relative;
+  cursor: pointer;
+}
+
+nav .fa {
+  display: none;
+}
+@media (max-width: 700px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", cursive;
+
+  }
+  .header {
+    min-height: 20vh;
+    width: 100%;
+    /* background-image:url(https://www.tourmyindia.com/blog//wp-content/uploads/2018/09/Festivals-to-Witness-in-December.jpg); */
+    background-color: rgb(196, 220, 242);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation-name: example;
+    animation-duration: 0s;
+    background-image: repeat;
+    object-fit: contain;
+    animation-iteration-count: 1;
+  }
+
+  .abc a {
+    text-decoration: none;
+    font-family: "Sofia", sans-serif;
+  }
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img {
+    width: 75px;
+    height: 60px;
+  }
+  .name {
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+
+  .nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(217, 171, 171);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+
+  .text-button {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    color: rgb(49, 45, 45);
+    background: #fff3f3;
+    position: relative;
+    cursor: pointer;
+  }
+
+  nav .fa {
+    display: none;
+  }
+}
