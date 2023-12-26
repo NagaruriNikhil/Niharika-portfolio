@@ -1,6 +1,7 @@
 h1 {
   padding-left: 35%;
 }
+
 p {
   padding-left: 300px;
   padding-right: 700px;
@@ -10,60 +11,88 @@ p {
   text-align: justify;
   text-size-adjust: auto;
 }
+
 img {
   float: right;
   padding-right: 100px;
   margin-top: 250px;
   height: 75%;
 }
+
 .connect p {
   padding-left: 45%;
   padding-right: 30%;
 }
+
 .para p {
   padding-right: 250px;
 }
-.para h1{
-  padding-left: 45%;
 
-}
-.skills h1{
+.para h1 {
   padding-left: 45%;
 }
 
+.skills h1 {
+  padding-left: 45%;
+}
+
+.symbols{
+  margin-left: 5%;
+}
+
+.symbol1{
+  padding-right: 2%;
+}
+.languages{
+  padding-left: 35%;
+}
 @media (max-width: 700px) {
   h1 {
     padding-left: 25%;
   }
-  
-  .skills h1{
+
+  .skills h1 {
     padding-left: 30%;
   }
-  .para h1{
+
+  .para h1 {
     padding-left: 25%;
-  
   }
 
   p {
-    padding-left: 50px;
-    padding-right: 50px;
-    line-height: 2;
-    font-size: large;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5; /* Adjust line height for better readability on mobile */
+    font-size: medium; /* Adjust font size for better readability on mobile */
     text-align: justify;
   }
-  img {
-    padding-top: 0%;
-    width: 50%;
-    height: max-content;
+  .languages{
+    padding-left: 5%;
   }
+
+  .symbols{
+    padding-left: 48%;
+    margin-left: 18%;
+  }
+  img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 50%;
+  height: 40%;
+  }
+
   .connect p {
-    padding-left: 45%;
+    padding-left: 10%;
     padding-right: 10%;
   }
+
   .para p {
-    padding-right: 50px;
+    padding-right: 20px;
   }
+
   .para a {
-    padding-right: 200px;
+    padding-right: 10px; /* Adjust as needed */
   }
 }

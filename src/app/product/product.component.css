@@ -15,15 +15,43 @@ ul.dot {
   font-size: large;
   list-style-position: inside;
 }
-
+video{
+  width:500px;
+  height:500px;
+  padding-left: 40%;
+}
 p,
-h1,
-h2,
-h3 {
+h1,h2,h3 {
   padding-left: 400px;
   padding-right: 200px;
   line-height: 2;
   font-size: large;
+}
+
+@media (max-width: 700px) {
+  p,
+  h1,h2,h3,
+  ul.dot,
+  ul.num {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  video{
+    width:300px;
+    height:200px;
+    padding-left: 10%;
+  }
+  .course-col {
+    padding: 2px 1px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Adjust as needed */
+  }
 }
 
 .data img {
@@ -36,6 +64,7 @@ h3 {
   display: flex;
   justify-content: space-evenly;
 }
+
 .course-col {
   flex-basis: 25%;
   border-radius: 10px;
@@ -43,36 +72,10 @@ h3 {
   padding: 20px 12px;
   box-sizing: border-box;
 }
-@media (max-width: 700px) {
-  .course-col {
-    padding: 2px, 1px;
-  }
-  .course-col img {
-    width: 20%;
-    display: block;
-    height: 10%;
-  }
-  .center {
-    height: 300px;
-    width: 200px;
-  }
-  .hello {
-    padding-left: 10px;
-  }
-  .course-col img {
-    width: 50%;
-    display: block;
-  }
-  p,
-  h1,
-  ul.dot,
-  ul.num {
-    padding-left: 20px;
-    padding-right: 10px;
-  }
-  .data img {
-    float: left;
-  }
+
+.course-col img {
+  width: 100%;
+  display: block;
 }
 
 .center {
@@ -80,16 +83,4 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  height: auto;
-}
-.hello {
-  padding-left: 450px;
-}
-
-p,
-h1 {
-  padding-left: 400px;
-  padding-right: 200px;
-  line-height: 2;
-  font-size: large;
 }
